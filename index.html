@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
+  
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
+  
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+
+    <div class="container ">
+      <div class="sign-up-container">
+         <h1>
+            Stay Updated!
+        </h1>
+         <p>
+            Join 60,000+ product managers receiving monthly <br> updates on:
+        </p>
+        <div class>
+          <p><span><img src="./assets/images/icon-list.svg" alt=""></span>Product discovery and building what matters</p>
+          <p><span><img src="./assets/images/icon-list.svg" alt=""></span>Measuring to ensure updates are a success</p>
+          <p><span><img src="./assets/images/icon-list.svg" alt=""></span>And much more!</p>
+        </div>
+        <div class="sign-up-form">
+          <div class="sign-up-heading">
+            <h5>
+              Email Address
+            </h5>
+            <h5 id="error-pop-up">
+              
+            </h5>
+          </div>
+          <form action="" id="email-form" class="email-field">
+            <input type="email" placeholder="email@company.com" required autocomplete="off" id="email-field" oninput="validateEmail ()">
+            <button type="submit" id="email-btn" onclick="openPopUp ()">Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+      </div>
+      <div class="sign-up-image">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="success">
+      </div>
+    </div>
+      
+
+<!-- Sign-up form end -->
+
+
+  <!-- Success message start -->
+
+    <div id="success-container" class="hide">
+      <div class="success-image">
+        <img src="./assets/images/icon-success.svg" alt="">
+      </div>
+      <div class="success-content">
+        <h1>
+          Thanks for <br> subscribing!
+        </h1>
+        <p>
+          A confirmation email has been sent to <b>ash@loremcompany.com </b> Please open and click the button inside to confirm your subscription.
+        </p>
+      </div>
+      <div class="success-button">
+          <button type="submit" onclick="dismissMessage ()">
+            Dismiss message
+          </button>
+      </div>
+    </div>
+
+  <!-- Success message end -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="main.js"></script> 
+</body>
+</html>

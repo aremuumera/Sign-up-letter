@@ -1,0 +1,188 @@
+@font-face{
+    font-family: MyFont ;
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: MyFont;
+}
+body{
+    background: hsl(234, 29%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+     /* Sign-up form :start */
+
+    .container{
+        width: 800px;
+        background: hwb(0 100% 0%);
+        padding: 20px; 
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        box-sizing:border-box;
+        gap: 20px;
+    }
+    .hide{
+        display: none;
+    }
+    .sign-up-container{
+        padding-left: 30px;
+        width: 60%;
+    }
+    .sign-up-container h1{
+        padding-bottom: 20px;
+        font-weight:bold ;
+        font-size: 40px;
+        color:hsl(235, 18%, 26%);
+    }
+    .sign-up-container p {
+        padding-bottom: 20px;
+        font-weight:200 ;
+        font-size: 16px;
+    }
+    
+    .sign-up-container span{
+        padding-right: 10px;
+        
+    }
+    .sign-up-form input{
+    padding: 10px;
+    border: 1px solid hsl(234, 29%, 20%);
+    outline: hsl(234, 29%, 20%);
+    border-radius: 5px;
+    margin-top:10px;
+    width: 100%;
+    margin-bottom:15px ;
+    }
+    
+    .sign-up-heading{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sign-up-form button{
+        padding:12px 50px 12px ;
+        border-radius:5px ;
+        color: hwb(0 100% 0%);
+        background: hsl(234, 29%, 20%);
+        font-weight: 500;
+        font-size: medium;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        width: 100%;
+        transition: background 0.2s ease-in-out;
+    }
+    .sign-up-form button:hover{
+        background:hsl( 4, 80%, 67%) ;
+    }
+    .sign-up-image{
+        width: 50%;
+        
+    }
+    .sign-up-image img{
+    width: 100%;
+    
+    }
+
+
+/* Sign-up form end */
+
+/*  Success message start  */
+#success-container{
+    width: 100%; 
+    max-width: 500px;
+    background: hwb(0 100% 0%);
+    padding: 50px; 
+    border-radius: 20px;
+
+}
+.open-pop-up{
+    display: block;
+}
+.success-image img{
+    width: 45px;
+    padding-bottom: 15px;
+}
+.success-content h1{
+    padding-bottom: 20px;
+    font-weight:800;
+    color:hsl(234, 29%, 20%);
+    font-size: 39px;
+}
+.success-content p{
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom:15px;
+}
+.success-content b{
+    color: hsl(234, 29%, 20%);
+    font-weight: bolder;
+}
+.success-button button{
+    text-align: center;
+    padding: 10px 50px 10px ;
+    width: 100%;
+    border-radius:5px ;
+    color: hwb(0 100% 0%);
+    background: hsl(234, 29%, 20%);
+    font-weight: 500;
+    font-size: medium;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.success-button button:hover{
+    background: hsl( 4, 80%, 67%);
+}
+/*  Success message end  */
+
+/* responsive design */
+
+@media screen and (max-width:710px){
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        width: 80%;
+        flex-direction: column-reverse;
+        padding: 0;
+        padding-bottom: 50px;
+        
+    }
+    .sign-up-container{
+        width: 100%;
+    
+    }
+    .sign-up-image {
+        width: 100%;
+        
+    }
+    .email-field{
+        width: 
+    }
+    .sign-up-container{
+        padding: 15px;
+    }
+    .sign-up-form button{
+        padding: 10px 18px 10px;
+    }
+    #success-container{
+        min-height: 100vh;
+        padding-top: 130px;
+        
+    }
+    .success-button {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 380px;
+    }
+}
